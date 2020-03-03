@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap");
+body {
+  font-family: "Muli";
+  background-color: #fbfbfb;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.navbar {
+  padding-left: 30px;
+  height: 100vh;
+  background-color: #fff;
+  min-width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.navbar .logo img {
+  width: 100px;
+  height: 60px;
+}
+
+.navbar .logo h5 {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.navbar .logo p {
+  margin: 0px;
+  font-size: 10px;
+  color: #aaaaaa;
+}
+
+.navbar .options {
+  margin-top: -10vh;
+  margin-left: 20px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .options .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+
+.navbar .options .option div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .options .option div h6 {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar .options .option span {
+  background-color: #1a9baf;
+  padding: 5px 9px;
+  border-radius: 100px;
+  font-size: 10px;
+  display: block;
+  font-weight: 800;
+  color: #fff;
+}
+
+.navbar .options .option:first-child {
+  background-color: #FCFBFC;
+  border-right: 7px solid #1a9baf;
+  padding-right: 5px;
+  margin: 0px -10px;
+  margin-left: -50px;
+  padding: 10px 10px;
+  padding-left: 50px;
+  color: #1a9baf;
+}
+
+.navbar .balance {
+  margin: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.navbar .balance div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .balance div h5 {
+  margin: 0px;
+  margin-bottom: -10px;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: #1a9baf;
+}
+
+.navbar .balance div h3 {
+  margin: 0px;
+  color: #465567;
+}
+
+.navbar .balance ion-icon {
+  font-size: 50px;
+}
+
+.container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .progress {
+  position: relative;
+  max-width: 420px;
+}
+
+.container .progress svg {
+  height: 420px;
+  width: 420px;
+}
+
+.container .progress svg circle {
+  fill: none;
+  stroke-width: 90;
+  stroke: #0a0a0a;
+  -webkit-transform: translate(140px, 140px);
+          transform: translate(140px, 140px);
+  stroke-dasharray: 950;
+  stroke-dashoffset: 950;
+}
+
+.container .progress svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #465567;
+}
+
+.container .progress svg circle:nth-child(2) {
+  stroke-dashoffset: 130;
+  stroke: #1a9baf;
+}
+
+.container .progress svg circle:nth-child(3) {
+  fill: #e6e9e8;
+}
+
+.container .progress svg circle:nth-child(4) {
+  fill: white;
+}
+
+.container .progress div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: 900;
+  color: #1a9baf;
+  letter-spacing: 0.05em;
+}
+
+.container .progress div p {
+  font-size: 12px;
+  color: #aaaaaa;
+  font-weight: 600;
+}
+
+.container .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .status .state {
+  margin: 30px;
+}
+
+.container .status .state p {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: #1a9baf;
+  margin-bottom: -10px;
+}
+
+.container .status .state .s {
+  color: rgba(85, 85, 85, 0.377);
+  margin-bottom: 20px;
+}
+
+.container .status .state .progress_bar_1 .bar {
+  background-color: #ecf2f5;
+  display: block;
+  height: 2px;
+}
+
+.container .status .state .progress_bar_2 .bar {
+  margin-top: 5px;
+  background-color: #1a9baf;
+  display: block;
+  height: 2px;
+  width: 80%;
+}
+
+.container .status .progress_bar_3 .bar {
+  background-color: #e6e9e8;
+  display: block;
+  height: 2px;
+}
+
+.container .status .progress_bar_4 .bar {
+  margin-top: 5px;
+  background-color: #465567;
+  display: block;
+  height: 2px;
+  width: 20%;
+}
+
+.add {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  background-color: #e6e9e8;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.add ion-icon {
+  margin-top: -5px;
+}
+/*# sourceMappingURL=style.css.map */
